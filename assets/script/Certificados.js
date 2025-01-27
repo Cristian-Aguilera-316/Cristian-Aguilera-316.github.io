@@ -7,8 +7,8 @@ const pintarCertificados = () => {
         return `
             <div class="col-md-4 mb-4">
                 <div class="card">
-                    <a href="${certificados.src}" target="_blank" rel="noopener noreferrer">
-                    <img src="${certificados.src}" class="card-img-top" alt="${certificados.titulo}"/>
+                    <a href="${certificados.url}" target="_blank" rel="noopener noreferrer">
+                    <img src="${certificados.src}" class="card-img-top" alt=""/>
                 </a>
                     <div class="card-body">
                         <h5 class="card-title">${certificados.titulo}</h5>

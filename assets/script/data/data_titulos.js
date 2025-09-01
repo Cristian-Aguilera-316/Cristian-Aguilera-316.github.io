@@ -1,5 +1,12 @@
 export const data_titulos = [
     {
+        nombre:"Ingeniero en Maquinaria, Vehículos Automotrices y Sistemas Electrónicos",
+        src: "https://desafiosdev.s3.amazonaws.com/uploads/certification/image/39117/certificacion-aprobacion-de-carrera-nuevo-proyecto-final-g60-16976(3).png",
+        src: "./assets/images/titulos/ingeniero_mecanico.png",
+        descripcion:"certificado de finalización de de la carrera.",
+        codigo:1111,
+    },
+    {
         nombre:"Desarrollador Front End con React",
         url: "https://desafiosdev.s3.amazonaws.com/uploads/certification/image/34641/certificacion-aprobacion-de-carrera-nuevo-react-ii-g60-16976(3).png",
         src: "./assets/images/titulos/Frontend_con_React.png",

@@ -15,24 +15,20 @@
     >
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
       <div class="container">
+        <!-- logo cristian aguilera -->
         <a class="navbar-brand" href="./index.html">Cristian Aguilera</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarTogglerDemo02"
-          aria-controls="navbarTogglerDemo02"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!-- boton de formacion -->
             <li class="nav-item">
               <a class="nav-link" href="./portfolio_titulos.html">Formación</a>
+            <!-- boton de trabajos -->
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./portfolio_trabajos.html">Trabajos</a>
@@ -41,240 +37,128 @@
         </div>
       </div>
     </nav>
-    <main class="container-fluid main-section">
-      <h1 class="text-white">Encuentra tu nueva propiedad</h1>
-    </main>
-    <div class="container mt-5">
-      <!-- Propiedades en venta -->
-      <section id="venta">
-        <h2>Propiedades en venta</h2>
-        <div class="row" id="propiedades_venta">
-<!--           <div class="col-md-4 mb-4">
-            <div class="card">
-              <img
-                src="https://fotos.perfil.com/2018/09/21/trim/950/534/nueva-york-09212018-366965.jpg"
-                class="card-img-top"
-                alt="Imagen del departamento"
-              />
-              <div class="card-body">
-                <h5 class="card-title">
-                  Apartamento de lujo en zona exclusiva
-                </h5>
-                <p class="card-text">
-                  Este apartamento de lujo está ubicado en una exclusiva zona
-                  residencial
-                </p>
-                <p>
-                  <i class="fas fa-map-marker-alt"></i> 123 Luxury Lane,
-                  Prestige Suburb, CA 45678
-                </p>
-                <p>
-                  <i class="fas fa-bed"></i> 4 Habitaciones |
-                  <i class="fas fa-bath"></i> 4 Baños
-                </p>
-                <p><i class="fas fa-dollar-sign"></i> 5.000</p>
-                <p class="text-danger">
-                  <i class="fas fa-smoking-ban"></i> No se permite fumar
-                </p>
-                <p class="text-danger">
-                  <i class="fa-solid fa-ban"></i> No se permiten mascotas
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="card">
-              <img
-                src="https://cdn.bioguia.com/embed/3d0fb0142790e6b90664042cbafcb1581427139/furgoneta.jpg"
-                class="card-img-top"
-                alt="Imagen del departamento"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Apartamento acogedor en la montaña</h5>
-                <p class="card-text">
-                  Este apartamento acogedor está situado en lo alto de una
-                  montaña con impresionantes vistas
-                </p>
-                <p>
-                  <i class="fas fa-map-marker-alt"></i> 789 Mountain Road,
-                  Summit Peaks, CA 23456
-                </p>
-                <p>
-                  <i class="fas fa-bed"></i> 2 Habitaciones |
-                  <i class="fas fa-bath"></i> 1 Baños
-                </p>
-                <p><i class="fas fa-dollar-sign"></i>1.200</p>
-                <p class="text-success">
-                  <i class="fas fa-smoking"></i> Permitido fumar
-                </p>
-                <p class="text-success">
-                  <i class="fas fa-paw"></i> Mascotas permitidas
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="card">
-              <img
-                src="https://resizer.glanacion.com/resizer/fhK-tSVag_8UGJjPMgWrspslPoU=/768x0/filters:quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/CUXVMXQE4JD5XIXX4X3PDZAVMY.jpg"
-                class="card-img-top"
-                alt="Imagen del departamento"
-              />
-              <div class="card-body">
-                <h5 class="card-title">
-                  Penthouse de lujo con terraza panorámica
-                </h5>
-                <p class="card-text">
-                  Este penthouse de lujo ofrece una terraza panorámica con
-                  vistas espectaculares
-                </p>
-                <p>
-                  <i class="fas fa-map-marker-alt"></i> 567 Skyline Avenue,
-                  Skyview City, CA 56789
-                </p>
-                <p>
-                  <i class="fas fa-bed"></i> 3 Habitaciones |
-                  <i class="fas fa-bath"></i> 3 Baños
-                </p>
-                <p><i class="fas fa-dollar-sign"></i> 4.500</p>
-                <p class="text-danger">
-                  <i class="fas fa-smoking-ban"></i> No se permite fumar
-                </p>
-                <p class="text-success">
-                  <i class="fas fa-paw"></i> Mascotas permitidas
-                </p>
-              </div>
-            </div>
-          </div> -->
+    <main>
+      <section class="mainindex">
+        <div class="image">
+          <img src="./assets/images/index/unnamed_LE_upscale_digital_art_x4.png" class="rounded-circle" alt="">
         </div>
-        <a href="#" class="btn btn-dark"
-          >Ver todas las propiedades en venta</a
-        >
-      </section>
-      <hr />
-      <!-- Propiedades en alquiler -->
-      <section id="alquiler" class="mb-5">
-        <h2>Propiedades en alquiler</h2>
-        <div class="row" id="propiedades_alquiler">
-<!--           <div class="col-md-4 mb-4">
-            <div class="card">
-              <img
-                src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YXBhcnRtZW50fGVufDB8MHwwfHx8MA%3D%3D&auto=format&fit=crop&w=700&q=60"
-                class="card-img-top"
-                alt="Imagen del departamento"
-              />
-              <div class="card-body">
-                <h5 class="card-title">
-                  Apartamento en el centro de la ciudad
-                </h5>
-                <p class="card-text">
-                  Este apartamento de 2 habitaciones está ubicado en el corazón
-                  de la ciudad, cerca de todo.
-                </p>
+        <div class="aboutme">
+          <h2>About Me</h2>
+          <p>
+            Soy un desarrollador web con 1 año de experiencia en el desarrollo de aplicaciones web en tecnologías innovadoras.<hr>
+            Destaco por mi proactividad, liderazgo, capacidad de autoaprendizaje y respuesta al cambio. Soy pasionado por la búsqueda continua de mejoras en el código, así como por mantener buenas relaciones con sus compañeros, creando entornos agradables, colaborativos y de enseñanza. Poseo una alta empatía y tolerancia para la resolución de conflicto.<hr> estoy en búsqueda de nuevas oportunidades laborales ¡Contáctame y creemos soluciones juntos!
+          </p>
+        </div>
+        <div class="mystack">
+          <h2>My Stack</h2>
+          <div class="stack">
+            <div class="columna1">
+              <div>
+                <i class="fab fa-html5 text-danger fa-3x"></i>
+                <p>Html5</p>
+              </div>
+              <div>
+                <i class="fab fa-css3-alt text-primary fa-3x"></i>
                 <p>
-                  <i class="fas fa-map-marker-alt"></i> 123 Main Street,
-                  Anytown, CA 91234
+                  Css3
                 </p>
+              </div>
+              <div>
+                <i class="fab fa-js text-warning fa-3x"></i>
                 <p>
-                  <i class="fas fa-bed"></i> 2 Habitaciones |
-                  <i class="fas fa-bath"></i> 2 Baños
+                  JavaScript
                 </p>
-                <p><i class="fas fa-dollar-sign"></i> 2.000</p>
-                <p class="text-danger">
-                  <i class="fas fa-smoking-ban"></i> No se permite fumar
+              </div>
+              <div>
+                <i class="fab fa-react text-info fa-3x"></i>
+                <p>
+                  React
                 </p>
-                <p class="text-success">
-                  <i class="fas fa-paw"></i> Mascotas permitidas
+              </div>
+              <div>
+                <i class="fab fa-npm text-danger fa-3x"></i>
+                <p>
+                  Npm
+                </p>
+              </div>
+              <div>
+                <i class="fas fa-key text-dark fa-3x"></i>
+                <p>
+                  Jwt
+                </p>
+              </div>
+            </div>
+            <div class="columna2">
+              <div>
+                <i class="fab fa-bootstrap text-purple fa-3x"></i>
+                <p>bootstrap</p>
+              </div>
+              <div>
+                <i class="fab fa-node-js text-success fa-3x"></i>
+                <p>
+                  Node
+                </p>
+              </div>
+              <div>
+                <i class="fas fa-database text-secondary fa-3x"></i>
+                <p>
+                  SQL
+                </p>
+              </div>
+              <div>
+                <i class="fab fa-git-alt text-danger fa-3x"></i>
+                <p>
+                  Git
+                </p>
+              </div>
+              <div>
+                <i class="fab fa-github text-dark fa-3x"></i>
+                <p>
+                  github
+                </p>
+              </div>
+              <div>
+                <i class="fas fa-code text-primary fa-3x"></i>
+                <p>
+                  Vscode
                 </p>
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-4">
-            <div class="card">
-              <img
-                src="https://images.unsplash.com/photo-1669071192880-0a94316e6e09?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
-                class="card-img-top"
-                alt="Imagen del departamento"
-              />
-              <div class="card-body">
-                <h5 class="card-title">
-                  Apartamento luminoso con vista al mar
-                </h5>
-                <p class="card-text">
-                  Este hermoso apartamento ofrece una vista impresionante al mar
-                </p>
-                <p>
-                  <i class="fas fa-map-marker-alt"></i> 456 Ocean Avenue,
-                  Seaside Town, CA 56789
-                </p>
-                <p>
-                  <i class="fas fa-bed"></i> 3 Habitaciones |
-                  <i class="fas fa-bath"></i> 3 Baños
-                </p>
-                <p><i class="fas fa-dollar-sign"></i> 2,500</p>
-                <p class="text-success">
-                    <i class="fas fa-smoking"></i> Permitido fumar
-                  </p>
-                  <p class="text-success">
-                    <i class="fas fa-paw"></i> Mascotas permitidas
-                  </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="card">
-              <img
-                src="https://images.unsplash.com/photo-1567496898669-ee935f5f647a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNvbmRvfGVufDB8MHwwfHx8MA%3D%3D&auto=format&fit=crop&w=1000&q=60"
-                class="card-img-top"
-                alt="Imagen del departamento"
-              />
-              <div class="card-body">
-                <h5 class="card-title">
-                  Condominio moderno en zona residencial
-                </h5>
-                <p class="card-text">
-                  Este elegante condominio moderno está ubicado en una tranquila
-                  zona residencial
-                </p>
-                <p>
-                  <i class="fas fa-map-marker-alt"></i> 123 Main Street,
-                  Anytown, CA 91234
-                </p>
-                <p>
-                  <i class="fas fa-bed"></i> 2 Habitaciones |
-                  <i class="fas fa-bath"></i> 2 Baños
-                </p>
-                <p><i class="fas fa-dollar-sign"></i> 2,200</p>
-                <p class="text-danger">
-                    <i class="fas fa-smoking-ban"></i> No se permite fumar
-                  </p>
-                  <p class="text-danger">
-                    <i class="fas fa-ban"></i> No se permiten mascotas
-                  </p>
-              </div>
-            </div>
-          </div> -->
-        </div> 
-        <a href="#" class="btn btn-dark" id="verMasAlquiler"
-          >Ver todas las propiedades en alquiler</a
-        >
+        </div>
       </section>
-    </div>
-    <!-- script para fontawesome -->
+      <footer class="footer">
+        <div>
+          <a href="https://www.linkedin.com/in/cristian-erick-alfredo-aguilera-palma-5b8a59113/"><i class="fab fa-linkedin text-primary fa-3x"></i></a>
+          <p>linkedin</p>
+        </div>
+        <div>
+          <a href="https://github.com/Cristian-Aguilera-316"><i class="fab fa-github text-light fa-3x"></i></a>
+          <p>github</p>
+        </div>
+        <div>
+          <i class="fas fa-envelope mail-icon text-light fa-3x" onclick="openOutlook()"></i>
+          <p>mail</p>
+        </div>
+      </footer>
+    </main>
+  </body> 
+    <!-- funcion para enviar un correo -->
+    <script>
+      function openOutlook() {
+          window.open('https://outlook.live.com/mail/0/deeplink/compose?to=cristian.ap316@gmail.com', '_blank');
+      }
+  </script>
+    <!-- script para font aweosme -->
     <script
       src="https://kit.fontawesome.com/f5bdbb41e0.js"
       crossorigin="anonymous"
     ></script>
     <!-- script para bootstrap -->
-    <script 
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous">
-    </script>
-    <!-- script para index  -->
-    <script 
-      type="module" 
-      src="./assets/script/index.js">
     </script>
   </body>
 </html>

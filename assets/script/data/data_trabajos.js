@@ -12,20 +12,8 @@ export const data_trabajos = [
         react: false,
     },
     {
-        titulo:"LaBarraBeer",
-        imgUrl: "",
-        descripcion:"E-comerce con html y css",
-        fecha:"27/08/2024",
-        github:"https://github.com/Cristian-Aguilera-316/Desafiolatam_M1D2",
-        pages:"https://Cristian-Aguilera-316.github.io/Desafiolatam_M1D2",
-        html: true,
-        css: true,
-        javascript: false,
-        react: false,
-    },
-    {
         titulo:"iguana page",
-        imgUrl: "",
+        imgUrl: "./assets/images/trabajos/m1d3.png",
         descripcion:"pag informativa sobre iguanas, creada con html y css",
         fecha:"27/08/2024",
         github:"https://github.com/Cristian-Aguilera-316/Desafiolatam_M1D3",
@@ -49,7 +37,7 @@ export const data_trabajos = [
     },
     {
         titulo:"comidas por el mundo",
-        imgUrl: "",
+        imgUrl: "./assets/images/trabajos/m1d5.png",
         descripcion:"pag tipo blog informativo creada con bootstrap, html y css",
         fecha:"27/08/2024",
         github:"https://github.com/Cristian-Aguilera-316/Desafiolatam_M1D5",
@@ -59,7 +47,7 @@ export const data_trabajos = [
         javascript: false,
         react: false,
     },
-    {
+    /* {
         titulo:"chat page networking",
         imgUrl: "",
         descripcion:"pag de chat empresarial crada con bootstrap, css, y html",
@@ -84,7 +72,7 @@ export const data_trabajos = [
         react: false,
     },
     {
-        titulo:"",
+        titulo:"electric cars",
         imgUrl: "",
         descripcion:"",
         fecha:"27/08/2024",
@@ -96,7 +84,7 @@ export const data_trabajos = [
         react: false,
     },
     {
-        titulo:"",
+        titulo:"ecomerce zapatillas",
         imgUrl: "",
         descripcion:"",
         fecha:"27/08/2024",
@@ -108,7 +96,7 @@ export const data_trabajos = [
         react: false,
     },
     {
-        titulo:"",
+        titulo:"ejercicio de javascript",
         imgUrl: "",
         descripcion:"",
         fecha:"27/08/2024",
@@ -120,7 +108,7 @@ export const data_trabajos = [
         react: false,
     },
     {
-        titulo:"",
+        titulo:"ejercico de jabascript 2",
         imgUrl: "",
         descripcion:"",
         fecha:"27/08/2024",
@@ -132,7 +120,7 @@ export const data_trabajos = [
         react: false,
     },
     {
-        titulo:"",
+        titulo:"ejercicio de javascript 3",
         imgUrl: "",
         descripcion:"",
         fecha:"27/08/2024",
@@ -142,10 +130,10 @@ export const data_trabajos = [
         css: true,
         javascript: true,
         react: false,
-    },
+    }, */
     {
-        titulo:"",
-        imgUrl: "",
+        titulo:"propiedades en alquiler",
+        imgUrl: "./assets/images/trabajos/m3d4.png",
         descripcion:"",
         fecha:"27/08/2024",
         github:"https://github.com/Cristian-Aguilera-316/Desafiolatam_M3D4",
@@ -155,7 +143,7 @@ export const data_trabajos = [
         javascript: true,
         react: false,
     },
-    {
+    /* {
         titulo:"",
         imgUrl: "",
         descripcion:"",
@@ -238,5 +226,5 @@ export const data_trabajos = [
         css: true,
         javascript: true,
         react: true,
-    },
+    }, */
 ]

@@ -1,126 +1,250 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: inherit;
-    background-color: #0D2703/* rgb(13,39,30) */;
-    color: #ffff;
+*{
+    margin:0;
+    padding:0;
+    font-family:inherit;
+}
+:root{
+    --bg:#0D2703;
+    --accent:#00C26E;
+}
+html,body{
+    background-color:var(--bg);
+    color:#fff;
+}
+.object-fit-cover{
+    object-fit:cover;
+}
+.tecnologias {
+    width: 100vw;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+    background-color: var(--bg);
 }
 
+.tecnologias h2 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.medallas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.tech-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 14px;
+    border: 1px solid var(--accent);
+    border-radius: 9999px;
+    background: rgba(0, 194, 110, 0.1);
+    color: #fff;
+    font-weight: 600;
+    line-height: 1;
+    transition: background 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+}
+
+.tech-icon {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+.tech-pill:hover {
+    background: var(--accent);
+    color: #0B1C0B;
+    transform: translateY(-1px);
+    border-color: var(--accent);
+}
+.tech-pill:hover .tech-icon {
+    filter: none;
+    transform: scale(1.08);
+}
+.title-card{
+    background: #fffefed5;
+    border: 5px solid ;
+    border-radius: 16px;
+    transition:transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+.title-card .card-title{
+    font-weight: 700;
+    line-height: 1.25;
+}
+.title-overlay{
+    position:absolute; inset:0;
+    background:linear-gradient(180deg, rgba(0, 0, 0, 0.04) 40%, rgba(0,0,0,.45) 100%);
+    pointer-events:none;
+}
+.title-badge{
+    color: black;
+    border:1px solid rgba(2, 63, 37, 1);
+    background: rgba(2, 59, 35, 0.26) !important;
+    font-weight:700;
+}
+.title-card:hover{
+    transform:translateY(-4px);
+    border-color:rgba(0,194,110,.6);
+    box-shadow:
+        0 14px 32px rgba(0,0,0,.35),
+        0 0 0 1px rgba(0,194,110,.25) inset,
+        0 0 18px rgba(0,194,110,.25);
+}
+.title-card img{
+    border-top-left-radius:16px;
+    border-top-right-radius:16px;
+}
 /*vista considerada para moviles estándar */
-@media (max-width: 480px) { 
-    .descripcion{ 
-        height: 70vh;
+@media (max-width: 480px) {
+    .descripcion{
         width: 100vw;
+        padding: 1.5rem 1rem 1rem;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;   
+        gap: 1.5rem;
+        background-color: var(--bg);
     }
     .photo-desc{
-        height: 200px;
-        width: 200px;
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 2px solid black
+        ;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .photo-desc img {
-        width: 150px;
-        height: 150px;
+    .photo-desc img{
+        width: 100%;
+        height: 100%;
         object-fit: cover;
-        border-radius: 50%;
     }
     .descripcion-misc{
-        height: 20vh;
-        width: 100vw;
+        max-width: 90vw;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
     }
     .texto-desc{
-        height: 20vh;
-        width: 100vw;
-        font-size: 15px;
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        gap: .5rem;
+        text-align: center;
+    }
+    .texto-desc h1{
+        font-size: 1.8rem;
+        font-weight: 800;
+    }
+    .texto-titulos{
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    .location{
+        display: inline-flex;
+        align-items: center;
+        gap: .4rem;
+        font-size: .9rem;
+        color: #f0f0f0;
+    }
+    .texto-aboutme{
+        margin-top: 1.5rem;
+        max-width: 90vw;
+        font-size: .9rem;
+        line-height: 1.5;
+        text-align: left;
     }
     .media-desc{
-        height: 20vh;
-        width: 100vw;
+        margin-top: .75rem;
         display: flex;
-        flex-direction: row;
+        gap: .75rem;
+        align-items: center;
+    }
+    .media-desc a{
+        border-radius: 9999px;
+        border: 1px solid var(--accent);
+        background: transparent;
+        text-decoration: none !important;
+        color: #fff;
+        padding: .45rem .9rem;
+        font-size: .85rem;
+        font-weight: 600;
+        display: inline-flex;
+        align-items: center;
+        gap: .4rem;
+        cursor: pointer;
+        transition: background .2s ease, transform .2s ease, border-color .2s ease;
+    }
+    .media-desc a:first-child{
+        background-color: var(--accent);
+        color: #0b1c0b;
+        min-width: 9rem;
         justify-content: center;
-        align-items: center;
-        gap: 1rem;
-    }     
-    .pill{
-        height: 25px;
-        border: solid rebeccapurple;
-        background-color: #004E00;
-        border-radius: 50px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 5px;    
-        padding: 0px 10px 0px 10px;
-                
-    }
-    .tecnologias{
-        padding: 0px 20px 0px 20px;
-    }
-    .medallas{
-        border: solid greenyellow;
-        width: 90vw;
-        height: 20vh;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content:start;
-        align-content: flex-start;
-        gap: 0.3rem;        
-    } 
-    .lineadetiempo{
-        border: solid rgb(4, 204, 249);
-        width: 100vw;
-        height: 500vh;
-        gap: 2rem;
-    }
-    .tarjetaldt{
-        display: flex;
-        flex-direction:column;
-        align-items: center;
-
-    }
-    .tar_titulos{
-        border: solid red;
-        width: 400px;
-        height: 400px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        
-    }
-    .tar_main{
-        border: solid black;
-        display:flex;
-        flex-direction: column;
-
-    }
-    .tar_text{
-
-    }
-    .tar_img{
-        
-    }
-    .trabajos{
-        border: solid yellow;
-        width: 90vw; 
     }
 
+    .media-desc a:hover{
+        transform: translateY(-1px);
+        border-color: var(--accent);
+        background-color: rgba(0,194,110,0.18);
+    }
+
+    .media-desc a:first-child:hover{
+        background-color: #00aa5c;
+    }
+    .title-card .card-body{
+        padding:1rem;
+    }
+    .title-card .btn{
+        width: 5rem;
+    }
+    .title-card .badge{
+        font-size:.75rem;
+    }
+    .title-card .card-title{
+        font-size:1rem;
+    }
+    .title-card .card-text, .title-card .text-secondary{
+        font-size:.90rem;
+    }
+    .card-body span{
+        padding:  0.60rem 0 0.60rem 0;
+        width: 5rem;
+    }
+    #trabajosCarousel .carousel-item img {
+    object-fit: cover;
+    height: 260px;
+    border-radius: 12px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    #trabajosCarousel .carousel-item a:hover img {
+    transform: scale(1.03);
+    opacity: 0.9;
+    cursor: pointer;
+    }
+
+    #trabajosCarousel .carousel-caption {
+    background: rgba(0, 0, 0, 0.45);
+    border-radius: 10px;
+    padding: 0.75rem 1rem;
+    }
+
+    #trabajosCarousel h5 {
+    color: #00C26E;
+    font-size: 1rem;
+    }
+
+    #trabajosCarousel p {
+    font-size: 0.85rem;
+    color: #ccc;
+    }
     .mediafooter{
-        border: solid blue;
         width: 100vw;
         height: 10vh;
         display: flex;
@@ -128,12 +252,12 @@
         align-items: center;
         justify-content: center;
     }
-} 
+}
 
 /* esta vista esta considerada para moviles pequeños (Movil L en chrome)
  L) */
-@media (min-width: 481px) and (max-width: 1023px) {    
+@media (min-width: 481px) and (max-width: 1023px) {
 }
 /* esta vista esta cosiderada para pantallas topo desktop (laptop en chrome) */
-@media (min-width: 1024px) and (max-width: 1440px) {    
+@media (min-width: 1024px) and (max-width: 1440px) {
 }

@@ -1,20 +1,23 @@
-import { data_tecnologias } from "./data/data_tecnologias.js";
+import { tecnologias } from "./data/data_tecnologias.js";
 
-const dasboard = document.querySelector("#indice_tecnologias")
+const contenedor = document.querySelector("#indice_tecnologias");
 
-const pintarTecnologias = () => {
-    const cards = data_tecnologias.map((tecnologias) => {
-        return `            
-            <div class="">
-                <span class="pill">
-                    <img src="${tecnologias.src}" width="20" height="20" alt="HTML"> ${tecnologias.nombre}
-                </span>
-            </div>
+const crearPill = (t) => `
+  <span class="tech-pill">
+    <img class="tech-icon" src="${t.icon}" alt="${t.label}">
+    ${t.label}
+  </span>
+`;
 
-        `
-    })
-     dasboard.innerHTML = cards.join ("")
-}
+const renderTecnologias = () => {
+  contenedor.classList.add(
+    "d-flex",
+    "flex-wrap",
+    "gap-2",
+    "justify-content-start",
+    "align-items-center"
+  );
+  contenedor.innerHTML = tecnologias.map(crearPill).join("");
+};
 
-pintarTecnologias()
-
+renderTecnologias();

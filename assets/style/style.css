@@ -20,13 +20,14 @@ html,body{
     margin-bottom: 0.5rem;
     background-color: var(--bg);
 }
-
-.tecnologias h2 {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    text-align: center;
+.tecnologias h2{
+    text-align: left;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: var(--accent);
+    text-transform: uppercase;
+    font-weight: 700;
 }
-
 .medallas {
     display: flex;
     flex-wrap: wrap;
@@ -34,7 +35,6 @@ html,body{
     justify-content: flex-start;
     align-items: center;
 }
-
 .tech-pill {
     display: inline-flex;
     align-items: center;
@@ -48,7 +48,6 @@ html,body{
     line-height: 1;
     transition: background 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
 }
-
 .tech-icon {
     width: 20px;
     height: 20px;
@@ -65,10 +64,19 @@ html,body{
     transform: scale(1.08);
 }
 .title-card{
-    background: #fffefed5;
-    border: 5px solid ;
+    background: #ffffffeb;
+    border: 1px solid rgba(0,194,110,.25);
     border-radius: 16px;
-    transition:transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+    overflow: hidden;
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+.title-card,
+.title-card h5,
+.title-card p,
+.title-card span,
+.title-card .text-secondary,
+.title-card .card-title {
+    color: #000 !important;
 }
 .title-card .card-title{
     font-weight: 700;
@@ -86,21 +94,67 @@ html,body{
     font-weight:700;
 }
 .title-card:hover{
-    transform:translateY(-4px);
-    border-color:rgba(0,194,110,.6);
+    transform: translateY(-4px);
     box-shadow:
-        0 14px 32px rgba(0,0,0,.35),
-        0 0 0 1px rgba(0,194,110,.25) inset,
-        0 0 18px rgba(0,194,110,.25);
+        0 10px 25px rgba(0,0,0,.35),
+        0 0 0 1px rgba(0,194,110,.3) inset;
 }
 .title-card img{
-    border-top-left-radius:16px;
-    border-top-right-radius:16px;
+    width: 100vw;
+    height: auto;
+    object-fit: cover;
 }
-/*vista considerada para moviles estándar */
+.formacion-section{
+    width: 100vw;
+    padding: 2rem 1.5rem;
+    background-color: var(--bg);
+}
+.formacion-section h2{
+    text-align: left;
+    font-size: 1.4rem;
+    color: var(--accent);
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+.timeline{
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.timeline::before{
+    content: "none";
+}
+.timeline-card .card-body{
+    padding: 1.25rem 1.5rem;
+}
+.timeline-card p h5{
+    color: #0f0f0fff;
+    font-size: .95rem;
+}
+.timeline-item{
+    position: relative;
+}
+.timeline-dot{
+    display: none;
+}
+.timeline-card{
+    margin: 0;
+    flex: 1;
+}
+.carrousel_trabajos h2{
+    padding-left: 3rem;
+    text-align: left;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+/* esta vista esta cosiderada para pantallas tipo movile (celulares) */
 @media (max-width: 480px) {
     .descripcion{
-        width: 100vw;
+        width: 100vw;g
         padding: 1.5rem 1rem 1rem;
         display: flex;
         flex-direction: column;
@@ -113,8 +167,7 @@ html,body{
         height: 160px;
         border-radius: 50%;
         overflow: hidden;
-        border: 2px solid black
-        ;
+        border: 2px solid black;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -187,16 +240,21 @@ html,body{
         min-width: 9rem;
         justify-content: center;
     }
-
     .media-desc a:hover{
         transform: translateY(-1px);
         border-color: var(--accent);
         background-color: rgba(0,194,110,0.18);
     }
-
     .media-desc a:first-child:hover{
         background-color: #00aa5c;
     }
+    .timeline-card .card-body{
+        padding: 1.25rem 1.5rem;
+}
+    .timeline-card p {
+        color: #333;
+        font-size: .95rem;
+}
     .title-card .card-body{
         padding:1rem;
     }
@@ -217,47 +275,227 @@ html,body{
         width: 5rem;
     }
     #trabajosCarousel .carousel-item img {
-    object-fit: cover;
-    height: 260px;
-    border-radius: 12px;
-    transition: transform 0.3s ease, opacity 0.3s ease;
+        object-fit: cover;
+        height: 200px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        border-radius: 30px;
+        transition: transform 0.3s ease, opacity 0.3s ease;
     }
-
     #trabajosCarousel .carousel-item a:hover img {
-    transform: scale(1.03);
-    opacity: 0.9;
-    cursor: pointer;
+        transform: scale(1.03);
+        opacity: 0.9;
+        cursor: pointer;
     }
-
     #trabajosCarousel .carousel-caption {
-    background: rgba(0, 0, 0, 0.45);
-    border-radius: 10px;
-    padding: 0.75rem 1rem;
+        background: rgba(0, 0, 0, 0.45);
+        border-radius: 10px;
+        padding: 0.75rem 1rem;
     }
-
     #trabajosCarousel h5 {
-    color: #00C26E;
-    font-size: 1rem;
+        color: #00C26E;
+        font-size: 1rem;
     }
-
     #trabajosCarousel p {
-    font-size: 0.85rem;
-    color: #ccc;
+        font-size: 0.85rem;
+        color: #ccc;
     }
-    .mediafooter{
+    .media-footer{
         width: 100vw;
-        height: 10vh;
+        height: 20vh;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
     }
 }
-
-/* esta vista esta considerada para moviles pequeños (Movil L en chrome)
- L) */
-@media (min-width: 481px) and (max-width: 1023px) {
-}
 /* esta vista esta cosiderada para pantallas topo desktop (laptop en chrome) */
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 481px){
+    .descripcion{
+        width: 100vw;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 3rem 2.5rem 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 2.5rem;
+    }
+    .photo-desc img {
+        width: 220px;
+        height: 220px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 4px solid #000;
+        flex-shrink: 0;
+    }
+    .descripcion-misc{
+        max-width: 700px;
+        align-items: flex-start;
+    }
+    .texto-desc{
+        align-items: flex-start;
+        text-align: left;
+        gap: .75rem;
+    }
+    .texto-desc h1{
+        font-size: 2.6rem;
+        font-weight: 800;
+    }
+    .texto-titulos{
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+    .location{
+        font-size: 1rem;
+    }
+    .media-desc{
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: .75rem;
+    }
+    .media-desc a{
+        border-radius: 9999px;
+        border: 1px solid var(--accent);
+        background: transparent;
+        color: #fff;
+        padding: .45rem 1.1rem;
+        font-size: .9rem;
+        font-weight: 600;
+        display: inline-flex;
+        align-items: center;
+        gap: .4rem;
+        cursor: pointer;
+        text-decoration: none;
+        transition: background .2s ease, transform .2s ease, border-color .2s ease;
+    }
+    .media-desc a:first-child{
+        background-color: var(--accent);
+        color: #0b1c0b;
+        min-width: 10rem;
+        justify-content: center;
+    }
+    .media-desc a:hover{
+        transform: translateY(-1px);
+        border-color: var(--accent);
+        background-color: rgba(0,194,110,0.18);
+    }
+    .media-desc a:first-child:hover{
+        background-color: #00aa5c;
+    }
+    .texto-aboutme{
+        margin-top: 1.5rem;
+        max-width: 700px;
+        font-size: .95rem;
+        line-height: 1.6;
+        text-align: left;
+    }
+    .tecnologias{
+        width: 100vw;
+        max-width: 1200px;
+        margin: 0 auto 1rem;
+        padding: 2rem 2.5rem 1.5rem;
+    }
+    .tecnologias > div, .tecnologias .medallas{
+        max-width: 1200px;
+    }
+    .tecnologias h2{
+        text-align: left;
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+    .medallas{
+        justify-content: flex-start;
+    }
+    .tech-pill{
+        font-size: 0.95rem;
+        padding: 8px 16px;
+    }
+    .tech-icon{
+        width: 22px;
+        height: 22px;
+    }
+    .formacion-section{
+        max-width: 1200px;
+        margin: 0 auto 2rem;
+        padding: 3rem 2.5rem 2rem;
+    }
+    .timeline{
+        position: relative;
+        padding-left: 0;
+        margin-top: 2rem;
+        gap: 2rem;
+    }
+    .timeline-card{
+        margin: 0 auto;
+        width: 100vw;
+    }
+    .timeline::before{
+        content: "";
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        background: linear-gradient(
+            to bottom,
+            rgba(0,194,110,0.9),
+            rgba(0,194,110,0.1)
+        );
+    }
+    .timeline-item{
+        display: flex;
+    }
+    .timeline-dot{
+        display: block;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 1.4rem;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background: var(--accent);
+        box-shadow: 0 0 0 4px rgba(0,194,110,0.2);
+    }
+    .timeline-item.left .timeline-card{
+        margin-left: 0;
+        margin-right: auto;
+        max-width: 480px;
+    }
+    .timeline-item.right .timeline-card{
+        margin-left: auto;
+        margin-right: 0;
+        max-width: 480px;
+    }
+    .carrousel_trabajos h2 {
+        color
+    }
+    #trabajosCarousel{
+        border-radius: 10rem;
+    }
+    #trabajosCarousel .carousel-item img {
+        height: 70vh;
+        object-fit: cover;
+        border-radius: 18px;
+    }
+    #trabajosCarousel .carousel-caption {
+        background: rgba(0, 0, 0, 0.45);
+        border-radius: 10px;
+        padding: 0.75rem 1rem;
+    }
+    #trabajosCarousel .carousel-inner {
+        padding: 0 4rem;
+    }
+
+    .media-footer{
+        height: 30vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }

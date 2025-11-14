@@ -25,8 +25,8 @@ export const data_titulos = [
     },
     {
         nombre:"Desarrollador fullstack",
-        url: "./assets/images/titulos/fullstack_javascript.png",
-        src: "./assets/images/titulos/fullstack_javascript.png",
+        url: "./assets/images/titulos/Fullstack_Javascript.png",
+        src: "./assets/images/titulos/Fullstack_Javascript.png",
         descripcion:"certificado de finalización como fullstack.",
         codigo:39117,
         institucion: "Desafío Latam",
